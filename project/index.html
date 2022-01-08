@@ -41,6 +41,48 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div id="calculator">
+      <section id="result-section">
+        <!--Brand Container-->
+        <div class="brand-box">
+          <img class="logo-img" src="../__data/SVG/logo.svg" alt="logo image" />
+          <p class="brand-text">MMEx</p>
+        </div>
+
+        <!--Result Container-->
+        <div class="result-box">
+          <p class="result-text">0.00</p>
+        </div>
+      </section>
+      <form id="input-section">
+        <div class="input-box container">
+          <label for="input">Input</label>
+          <input
+            min="1"
+            autofocus
+            required
+            placeholder="0.00"
+            type="number"
+            id="input"
+            class="input"
+          />
+        </div>
+        <div class="from-box container">
+          <label for="from">From</label>
+          <select required id="from" class="from" name="from">
+            <option value="">Select Currency</option>
+          </select>
+        </div>
+        <div class="to-box container">
+          <label for="to">To</label>
+          <select id="to" class="to" name="to"></select>
+        </div>
+        <div class="btn-box container">
+          <button class="calc-btn" id="calcBtn">Calculate</button>
+        </div>
+      </form>
+    </div>
+
     <script src="js/data.js"></script>
     <script src="js/app.js"></script>
   </body>

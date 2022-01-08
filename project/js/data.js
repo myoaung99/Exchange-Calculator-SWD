@@ -3,6 +3,7 @@ const data = {
   description: "Official Website of Central Bank of Myanmar",
   timestamp: "1641542400",
   rates: {
+    MMK: "1",
     USD: "1,778.0",
     VND: "7.8343",
     CNY: "278.93",
