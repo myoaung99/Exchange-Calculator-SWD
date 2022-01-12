@@ -21,8 +21,8 @@ function appendOption(place) {
   }
 }
 
-appendOption(from);
-appendOption(to);
+appendOption(fromEle);
+appendOption(toEle);
 
 function createList(array) {
   let rowSpacer = document.querySelector("#rowSpacer");
