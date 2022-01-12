@@ -18,7 +18,6 @@ function appendOption(place) {
     option.setAttribute("value", toNum(data.rates[i]));
     optgroup.append(option);
     place.append(optgroup);
-    console.log(i);
   }
 }
 
