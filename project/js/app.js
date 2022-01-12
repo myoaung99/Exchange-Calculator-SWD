@@ -26,6 +26,9 @@ appendOption(from);
 appendOption(to);
 
 function createList(array) {
+  let rowSpacer = document.querySelector("#rowSpacer");
+  if (rowSpacer) rowSpacer.remove();
+
   let tr = document.createElement("tr");
 
   array.map((el) => {
@@ -72,5 +75,7 @@ document.querySelector("#input-section").addEventListener("submit", (e) => {
 (function () {
   if (localStorage.getItem("record")) {
     tbody.innerHTML = localStorage.getItem("record");
+  } else {
+    tbody.innerHTML = `<tr id="rowSpacer"><td colspan = 4>There is nothing.</td></tr>`;
   }
 })();
