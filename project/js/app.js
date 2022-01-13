@@ -78,3 +78,8 @@ document.querySelector("#input-section").addEventListener("submit", (e) => {
     tbody.innerHTML = `<tr id="rowSpacer"><td colspan = 4>There is nothing.</td></tr>`;
   }
 })();
+
+function changeMode() {
+  document.querySelector("body").classList.toggle("night-mode");
+  document.querySelector("#mode-icon").classList.toggle("fa-sun");
+}
